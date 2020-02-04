@@ -1,6 +1,6 @@
 object Main extends App {
   val persons = List(
-    Person(firstName = "Akira", lastName = "akura", age = 12),
+    Person(firstName = "Akira", lastName = "Sakura", age = aqwe),
     Person(firstName = "Peter", lastName = "Müller", age = 34),
     Person(firstName = "Nick", lastName = "Tagart", age = 52))
   val adults = Person.filterAdult(persons)
