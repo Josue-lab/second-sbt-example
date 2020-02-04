@@ -4,6 +4,7 @@ object Main extends App {
     Person(firstName = "Peter", lastName = "Müller", age = 34),
     Person(firstName = "Nick", lastName = "Tagart", age = 52))
   val adults = Person.filterAdult(persons)
+  val kids = Person.filterkids(persons)
   val descriptions = adults.map(p => p.description).mkString("\n\t")
   println(s"The adults are \n\t$descriptions")
 }
