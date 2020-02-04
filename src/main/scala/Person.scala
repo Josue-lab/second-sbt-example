@@ -6,4 +6,7 @@ object Person {
   def filterAdult(persons: List[Person]) : List[Person] = {
     persons.filter(_.age >= 18)
   }
+  def filterKids(persons: List[Person]) : List[Person] = {
+    persons.filter(_.age <= 18)
+  }
 }
