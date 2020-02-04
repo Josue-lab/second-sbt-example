@@ -21,7 +21,7 @@ class MainSpec extends WordSpec with Matchers {
     )
     "return a list of adult person" in {
       val ref = List(akira, peter, nick)
-      Person.filterAdult(ref) should be(List(peter, nick))
+      Person.filterAdult(ref) should be(List(akira,peter, nick))
     }
     "return an empty list if no adult in the list" in {
       val ref = List(akira)
