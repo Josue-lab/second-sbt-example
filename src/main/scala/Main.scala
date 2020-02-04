@@ -6,5 +6,7 @@ object Main extends App {
   val adults = Person.filterAdult(persons)
   val kids = Person.filterkids(persons)
   val descriptions = adults.map(p => p.description).mkString("\n\t")
+  val descriptions1 = kids.map(p => p.description).mkString("\n\t")
   println(s"The adults are \n\t$descriptions")
+  println(s"The kids is \n\t$descriptions1")
 }
