@@ -5,5 +5,5 @@ object Main extends App {
     Person(firstName = "Nick", lastName = "Tagart", age = 52))
   val adults = Person.filterAdult(persons)
   val descriptions = adults.map(p => p.description).mkString("\n\t")
-  println("The adults are \n\t$descriptions")
+  println(s"The adults are \n\t$descriptions")
 }
